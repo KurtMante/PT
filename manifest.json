@@ -1,0 +1,16 @@
+{
+    "name": "Dog Breed API",
+    "short_name": "Dog Breed",
+    "description": "Search and explore dog breeds with images",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffcc00",
+    "icons": [
+      {
+        "src": "do3g.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }

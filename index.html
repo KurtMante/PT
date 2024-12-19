@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dog Breed</title>
+    <link rel="shortcut icon" href="do3g.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="notification has-background-warning-light has-text-primary">
+        <h1 class="title"><b>Welcome to DOG Breed API!</b></h1>
+        <p>
+          <b>Let's play a game!</b><br>
+          Search for a dog breed, then click the <b>Search Button</b>
+          to get cute photos of dogs from that breed.
+        </p>
+      </div>
+
+      <div class="box">
+        <h2 class="subtitle">Search for Dog Breeds</h2>
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input class="input" type="text" id="breedInput" placeholder="Enter dog breed (e.g., retriever)">
+          </div>
+          <div class="control">
+            <button class="button is-info" id="fetchBtn">Search Breed</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="loading" class="has-text-centered mt-4" style="display: none;">
+        <button class="button is-loading is-large is-info">Loading...</button>
+      </div>
+
+      <div id="images" class="columns is-multiline mt-5">
+        <!-- Dynamic Cards Will Appear Here -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
